@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Ubuntu Condensed";
+  src: url('/assets/font/UbuntuCondensed-Regular.ttf');
+}
+body,h1,h2,h3,h4{
+  margin: 0;
+  font-size: 25px;
+  font-weight: normal;
+}
+body{
+  background-color: #000000;
+  color: #FFF;
+  font-family: "Ubuntu Condensed";
+  font-size: 25px;
+}
+
+.container{
+  max-width: 800px;
+  margin: auto;
+
+}

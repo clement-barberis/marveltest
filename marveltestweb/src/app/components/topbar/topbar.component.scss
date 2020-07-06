@@ -1,0 +1,24 @@
+#topbar{
+  position: sticky;
+  z-index: 2000;
+  top: 0px;
+  display: flex;
+  flex-direction: row;
+  background-color: #333333;
+  padding: 10px 13px 10px 13px;
+
+  h1{
+    vertical-align: middle;
+    margin-left: 30px;
+    line-height: 45px;
+    font-size: 1.4em;
+  }
+  img{
+    cursor: pointer;
+    &:hover{
+      opacity: 80%;
+    }
+  }
+
+
+}

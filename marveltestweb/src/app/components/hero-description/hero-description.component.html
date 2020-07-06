@@ -1,0 +1,21 @@
+<div id="hero-surname"> {{this.hero.identity}}</div>
+<div class="container">
+  <div class="flex">
+    <div class="img" style="background-image: url({{this.picUrl}});">
+
+    </div>
+    <div class="text">
+      <b>First name :</b> {{this.hero.firstname}} <br>
+      <b>Last name :</b> {{this.hero.lastname}} <br>
+      <b>Team :</b> {{this.hero.team.name}} <br>
+      <b>Origin :</b> {{this.hero.origin}} <br>
+      <b>Powers :</b> <span *ngFor="let power of this.hero.powers; let i = index" > {{power.power}} , </span> <br>
+      <br>
+      <b>Description : </b>
+      <br><br>
+
+      {{this.hero.description}}
+
+    </div>
+  </div>
+</div>

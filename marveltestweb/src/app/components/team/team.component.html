@@ -1,0 +1,8 @@
+<div class="team">
+  <h2>  {{this.team.name}}</h2>
+  <div class="grid">
+    <app-hero-card *ngFor="let hero of this.team.heroes; let i = index" [hero]="hero" ></app-hero-card>
+
+  </div>
+
+</div>
