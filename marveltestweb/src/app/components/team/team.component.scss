@@ -14,3 +14,17 @@
     gap: 20px;
   }
 }
+
+
+@media (max-width: 700px) {
+  
+  .team{
+    padding-left: 10px;
+  padding-right: 10px;
+    .grid{
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+  }
+  
+}

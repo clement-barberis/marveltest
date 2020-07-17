@@ -7,13 +7,17 @@ import { TopbarComponent } from './components/topbar/topbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { TeamComponent } from './components/team/team.component';
 import { HeroCardComponent } from './components/hero-card/hero-card.component';
-import {HeroService} from "./services/hero.service";
-import {TeamService} from "./services/team.service";
-import {HttpClientModule, HTTP_INTERCEPTORS} from "@angular/common/http";
-import {RequestInterceptor} from "./helpers/request.interceptor";
-import {ErrorInterceptor} from "./helpers/error.interceptor";
+import { HeroService } from "./services/hero.service";
+import { TeamService } from "./services/team.service";
+import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
+import { RequestInterceptor } from "./helpers/request.interceptor";
+import { ErrorInterceptor } from "./helpers/error.interceptor";
 import { HeroDescriptionComponent } from './components/hero-description/hero-description.component';
-import {TeamsComponent} from "./components/teams/teams.component";
+import { TeamsComponent } from "./components/teams/teams.component";
+
+import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 
 @NgModule({
@@ -29,7 +33,10 @@ import {TeamsComponent} from "./components/teams/teams.component";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    CommonModule,
+    BrowserAnimationsModule, // required animations module
+    ToastrModule.forRoot(), // ToastrModule added
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: RequestInterceptor, multi: true },
